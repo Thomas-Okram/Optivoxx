@@ -1,17 +1,18 @@
 import { accordionData, faqData, promoItems, servicesData, testimonialData } from "@/app/data";
-import ContentSection1 from "./ContentSection1";
-import ContentSection2 from "./ContentSection2";
+import dynamic from "next/dynamic";
 import HeroSection from "./HeroSection";
-import PromoSection from "./PromoSection";
-import ServicesSection from "./ServicesSection";
-import TextSlider from "./TextSlider";
-import ContentSection3 from "./ContentSection3";
-import AccordionSection from "./AccordianSection";
-import FaqSection from "./FaqSection";
-import TestimonialSection from "./TestimonialSection";
-import CtaSection from "./CtaSection";
-import InputEmail from "./InputEmail";
 
+const ContentSection1 = dynamic(() => import('./ContentSection1'));
+const ContentSection2 = dynamic(() => import('./ContentSection2'));
+const PromoSection = dynamic(() => import('./PromoSection'));
+const ServicesSection = dynamic(() => import('./ServicesSection'));
+const TextSlider = dynamic(() => import('./TextSlider'));
+const ContentSection3 = dynamic(() => import('./ContentSection3'));
+const AccordionSection = dynamic(() => import('./AccordianSection'));
+const FaqSection = dynamic(() => import('./FaqSection'));
+const TestimonialSection = dynamic(() => import('./TestimonialSection'));
+const CtaSection = dynamic(() => import('./CtaSection'));
+const InputEmail = dynamic(() => import('./InputEmail'));
 export default function HomePage() {
     return (
         <div>
