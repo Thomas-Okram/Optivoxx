@@ -1,6 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <img src="banner.png" alt="Apex Code - AI Cybersecurity Platform" width="100%">
+</div>
 
-## Getting Started
+<div align="center">
+  <img src="ytbanner.png" alt="Apex Code YouTube Banner" width="100%">
+</div>
+
+# Apex Code - AI-Powered Cybersecurity Platform
+
+<div align="center">
+
+[![YouTube Channel](https://img.shields.io/badge/YouTube-@ApexCode46-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/@ApexCode46)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Hamza_Khan-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/hamza-khan-tanoli-845099205/)
+[![GitHub followers](https://img.shields.io/github/followers/yourgithubusername?style=for-the-badge&logo=github)](https://github.com/yourgithubusername)
+
+</div>
+
+Welcome to the future of cybersecurity with AI. Our platform leverages cutting-edge artificial intelligence to provide robust security solutions for modern challenges.
+
+## 📺 Latest YouTube Tutorials
+
+- [Python Limitations in Data Science](https://www.youtube.com/@ApexCode46)
+- [WordPress 6.1 New Updates](https://www.youtube.com/@ApexCode46)
+- Check out more tutorials on our [YouTube Channel](https://www.youtube.com/@ApexCode46)
+
+## 🚀 Project Overview
+
+This is a [Next.js](https://nextjs.org) project that implements an AI-powered cybersecurity platform. Our solution helps organizations:
+- Transform large datasets into actionable security insights
+- Respond to threats in real-time
+- Enhance security measures with AI-powered tools
+- Streamline security operations
+
+## 🛠️ Getting Started
 
 First, run the development server:
 
@@ -16,21 +48,47 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔧 Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Next.js 14
+- TypeScript
+- AI/ML Integration
+- Real-time Analytics
+- Advanced Security Protocols
+- Cloud Infrastructure
 
-## Learn More
+## 📚 Documentation
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about the technologies used:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Learn Next.js](https://nextjs.org/learn)
+- [Next.js GitHub Repository](https://github.com/vercel/next.js)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Deployment
 
-## Deploy on Vercel
+Deploy easily using [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🤝 Connect With Us
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- YouTube: [@ApexCode46](https://www.youtube.com/@ApexCode46)
+- LinkedIn: [Hamza Khan](https://www.linkedin.com/in/hamza-khan-tanoli-845099205/)
+- Regular uploads and tutorials
+- Enable notifications to stay updated!
+
+## ⭐ Support
+
+If you find this project helpful, please consider:
+- Giving it a star on GitHub
+- Following me on GitHub
+- Subscribing to my [YouTube channel](https://www.youtube.com/@ApexCode46) for more tutorials
+
+## 📝 License
+
+MIT License - feel free to use this project for your own learning and development!
+
+---
+<div align="center">
+  <p>Built with ❤️ by Apex Code</p>
+  <p>"Boost your coding efficiency"</p>
+</div>
