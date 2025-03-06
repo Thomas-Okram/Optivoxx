@@ -32,7 +32,7 @@ export default function HomePage() {
         title="Unlock Your Future with Our IT Career Training"
         imageSrc="/images/education.jpg"
         description1="Our platform empowers students with the latest tech skills needed in today's competitive job market. Whether you’re just starting out or looking to upskill, we help you pave your path to success."
-        description2="100% job assistance is provided, and you can even start earning before you finish the course with our unique 'Pay after Placement' model. No upfront costs, only pay once you land a job!"
+        description2="100% job assistance is provided, and you can even start earning before you finish the course with our unique 'Pay after Placement' model. Only pay once you land a job!"
         ctaText="Explore Our Courses"
         ctaLink="#courses"
       />

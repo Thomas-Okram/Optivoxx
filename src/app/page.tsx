@@ -1,6 +1,8 @@
 import HomePage from "./componets/HomePage";
 import type { Metadata } from "next";
+import Head from "next/head";
 
+// Updated metadata with themeColor and colorScheme correctly placed outside of viewport
 export const metadata: Metadata = {
   title: "Optivoxx Technologies",
   description:
@@ -40,14 +42,24 @@ export const metadata: Metadata = {
     initialScale: 1,
     maximumScale: 1,
   },
-  themeColor: "#000000", // Included within metadata
-  colorScheme: "dark", // Included within metadata
+  // Remove themeColor and colorScheme from here
 };
 
 export default function Home() {
   return (
-    <main>
-      <HomePage />
-    </main>
+    <>
+      <Head>
+        {/* Meta tags for theme color and color scheme */}
+        <meta name="theme-color" content="#000000" />
+        <meta name="color-scheme" content="dark" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+      </Head>
+      <main>
+        <HomePage />
+      </main>
+    </>
   );
 }

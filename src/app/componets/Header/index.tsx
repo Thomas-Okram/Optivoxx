@@ -14,7 +14,6 @@ const navRoutes = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About Us" },
   { href: "/services", label: "Services" },
-  { href: "/pricing", label: "Pricing" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -60,12 +59,8 @@ export default function Header() {
 
         {/* Mobile Navigation (sliding sidebar) */}
         <div
-          className={`
-                    fixed z-50 top-0 left-0 h-full w-64 bg-gradient-to-b from-black to-emerald-950
-                    transform transition-transform duration-300 ease-in-out
-                    ${isOpen ? "translate-x-0" : "-translate-x-full"}
-                    md:hidden
-  `}
+          className={`fixed z-50 top-0 left-0 h-full w-64 bg-gradient-to-b from-black to-emerald-950 transform transition-transform duration-300 ease-in-out
+            ${isOpen ? "translate-x-0" : "-translate-x-full"} md:hidden`}
         >
           {/* Close button */}
           <button

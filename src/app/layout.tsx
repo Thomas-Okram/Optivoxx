@@ -1,10 +1,9 @@
 "use client";
-// import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./componets/Header";
 import Footer from "./componets/Footer";
-import JOS from 'jos-animation';
+import JOS from "jos-animation";
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
@@ -55,18 +54,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const pathname = usePathname();
-  
+
   const jos_options = {
     passive: false,
     once: true,
-    animation: 'fade-up',
-    timingFunction: 'ease',
+    animation: "fade-up",
+    timingFunction: "ease",
     threshold: 0,
     delay: 0.5,
     duration: 0.7,
-    scrollDirection: 'down',
-    rootMargin: '0% 0% 15% 0%',
+    scrollDirection: "down",
+    rootMargin: "0% 0% 15% 0%",
   };
+
   useEffect(() => {
     JOS.init(jos_options);
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -75,15 +75,26 @@ export default function RootLayout({
   useEffect(() => {
     JOS.refresh();
   }, [pathname]);
-  
+
   return (
     <html lang="en">
+      <head>
+        <title>Optivoxx Technologies</title> {/* Set global title */}
+        <link rel="icon" href="/images/001.png" /> {/* Set global favicon */}
+        <meta name="theme-color" content="#000000" />
+        <meta name="color-scheme" content="dark" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+        {/* Other meta tags can be added here */}
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${satoshiVariable.variable} antialiased font-sans`}
       >
-          <Header />
-          {children}
-          <Footer />
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );
