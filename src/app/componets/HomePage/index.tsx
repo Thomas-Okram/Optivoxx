@@ -1,86 +1,102 @@
-import { accordionData, faqData, promoItems, servicesData, testimonialData } from "@/app/data";
+import { faqData, promoItems, servicesData, testimonialData } from "@/app/data";
 import dynamic from "next/dynamic";
-import HeroSection from "./HeroSection";
 
-const ContentSection1 = dynamic(() => import('./ContentSection1'));
-const ContentSection2 = dynamic(() => import('./ContentSection2'));
-const PromoSection = dynamic(() => import('./PromoSection'));
-const ServicesSection = dynamic(() => import('./ServicesSection'));
-const TextSlider = dynamic(() => import('./TextSlider'));
-const ContentSection3 = dynamic(() => import('./ContentSection3'));
-const AccordionSection = dynamic(() => import('./AccordianSection'));
-const FaqSection = dynamic(() => import('./FaqSection'));
-const TestimonialSection = dynamic(() => import('./TestimonialSection'));
-const CtaSection = dynamic(() => import('./CtaSection'));
-const InputEmail = dynamic(() => import('./InputEmail'));
+// Dynamically import components
+const HeroSection = dynamic(() => import("./HeroSection"));
+const ContentSection1 = dynamic(() => import("./ContentSection1"));
+const ContentSection2 = dynamic(() => import("./ContentSection2"));
+const PromoSection = dynamic(() => import("./PromoSection"));
+const ServicesSection = dynamic(() => import("./ServicesSection"));
+const TextSlider = dynamic(() => import("./TextSlider"));
+const FaqSection = dynamic(() => import("./FaqSection"));
+const TestimonialSection = dynamic(() => import("./TestimonialSection"));
+const CtaSection = dynamic(() => import("./CtaSection"));
+const InputEmail = dynamic(() => import("./InputEmail"));
+
 export default function HomePage() {
-    return (
-        <div>
-            <HeroSection
-                title="Welcome to the Future of Cyber Security With AI"
-                description="We are a team of AI experts dedicated to building the future of AI. We are a team of AI experts dedicated to building the future of AI. Our cyber security platform supercharges your security with AI-powered security tools. Turn mountains of data into actionable insights and respond in real-time."
-            />
-            {/*...::: Promo Section Start :::... */}
-            <PromoSection items={promoItems} />
-            <ContentSection1
-                title="Industries protect their digital assets"
-                imageSrc="/images/3d.jpg"
-                description1="Cybersecurity solutions are used by a wide range of all types of organizations across various industries use to protect their digital assets, networks, and sensitive data."
-                description2="Our cyber security platform supercharges your security with AI-powered security tools. Turn mountains of data into actionable insights and respond in real-time."
-            />
+  return (
+    <div>
+      {/* Hero Section */}
+      <HeroSection
+        title="Empowering Businesses & Youth with Cutting-Edge Software Solutions"
+        description="Transform your business with innovative software solutions. Our team of experts provides tailored solutions that accelerate growth. Additionally, we educate the next generation of IT professionals with industry-relevant skills, ensuring a seamless transition into high-demand tech careers."
+        ctaText="Start Your Transformation Today"
+        ctaLink="#services"
+      />
 
-            <ContentSection2
-                title="Industries protect their digital assets"
-                description="Cybersecurity solutions are used by a wide range of all types of organizations across various industries use to protect their digital assets, networks, and sensitive data."
-                imageSrc="/images/p2.jpg"
-                imageAlt="content-img-2"
-                bulletPoints={[
-                    "AI cybersecurity to secure cloud platforms",
-                    "Safeguard customer payment information",
-                    "Secure digital assets and donor information"
-                ]}
-                imagePosition="right"
-            />
-            {/* Separator */}
-            <div className='global-container overflow-hidden'>
-                <div className='h-[1px] w-full bg-[#363636]' />
-            </div>
-            {/*...::: Services Section Start :::... */}
-            <ServicesSection services={servicesData} />
+      {/* Promo Section */}
+      <PromoSection items={promoItems} />
 
-            {/*...::: Text Slide Section Start :::... */}
-            <div className='global-container'>
-                <TextSlider bulletPoints={["#cybersecurity", "#hacking", "#tech", "#programming", "#coding", "#cybersecurity", "#hacking", "#tech", "#programming", "#coding"]} />
-            </div>
+      {/* Education Platform Section */}
+      <ContentSection1
+        title="Unlock Your Future with Our IT Career Training"
+        imageSrc="/images/education.jpg"
+        description1="Our platform empowers students with the latest tech skills needed in today's competitive job market. Whether you’re just starting out or looking to upskill, we help you pave your path to success."
+        description2="100% job assistance is provided, and you can even start earning before you finish the course with our unique 'Pay after Placement' model. No upfront costs, only pay once you land a job!"
+        ctaText="Explore Our Courses"
+        ctaLink="#courses"
+      />
 
-            <ContentSection3
-                title="Defenses to stay ahead of all evolving threats"
-                imageSrc="/images/p4.jpeg"
-                videoUrl="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
-            />
+      {/* Separator */}
+      <div className="global-container overflow-hidden">
+        <div className="h-[1px] w-full bg-[#363636]" />
+      </div>
 
-            <AccordionSection {...accordionData} />
+      {/* Services Section */}
+      <ServicesSection services={servicesData} />
 
-            {/* Separator */}
-            <div className='global-container overflow-hidden'>
-                <div className='h-[1px] w-full bg-[#363636]' />
-            </div>
+      {/* Text Slider Section (optional for keywords) */}
+      <div className="global-container">
+        <TextSlider
+          bulletPoints={[
+            "#BusinessSolutions",
+            "#SoftwareDevelopment",
+            "#CareerTraining",
+            "#TechCareers",
+            "#JobAssistance",
+          ]}
+        />
+      </div>
 
-            {/*...::: FAQ Section Start :::... */}
-            <FaqSection
-                title="Our experts are able to answer all your questions"
-                faqs={faqData}
-            />
+      {/* IT Solutions for Businesses Section */}
+      <ContentSection2
+        title="Tailored Software Solutions for Your Business"
+        description="We work with businesses to understand their unique challenges and provide custom software solutions that drive growth. From automating processes to providing real-time insights, we help you stay ahead of the competition."
+        imageSrc="/images/software01.jpg"
+        imageAlt="content-img-2"
+        bulletPoints={[
+          "Custom Software Development",
+          "AI-Powered Business Insights",
+          "Real-Time Data Analytics",
+          "Business Process Automation",
+        ]}
+        imagePosition="right"
+      />
 
-            {/*...::: Testimonial Section Start :::... */}
-            <TestimonialSection
-                title="What people are saying about AI cybersecurity"
-                trustpilotLink="https://your-trustpilot-link.com"
-                testimonials={testimonialData}
-            />
-            {/*...::: CTA Section Start :::... */}
-            <CtaSection />
-            <InputEmail />
-        </div>
-    )
+      {/* Separator */}
+      <div className="global-container overflow-hidden">
+        <div className="h-[1px] w-full bg-[#363636]" />
+      </div>
+
+      {/* Testimonials Section */}
+      <TestimonialSection
+        title="What Our Clients & Students Are Saying"
+        trustpilotLink="https://your-trustpilot-link.com"
+        testimonials={testimonialData}
+      />
+
+      {/* FAQ Section */}
+      <FaqSection title="Have Questions? We Have Answers." faqs={faqData} />
+
+      {/* Call to Action Section */}
+      <CtaSection
+        ctaText="Ready to Take Your Career or Business to the Next Level?"
+        ctaLink="#contact"
+        buttonText="Get Started Today"
+      />
+
+      {/* Email Capture Section */}
+      <InputEmail />
+    </div>
+  );
 }

@@ -3,24 +3,20 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "AI Cybersecurity | Your Vision, My Code",
-  description: "Your vision, my code - Creating powerful digital experiences that drive growth. Join 20+ satisfied clients who've transformed their online presence.",
+  description:
+    "Your vision, my code - Creating powerful digital experiences that drive growth. Join 20+ satisfied clients who've transformed their online presence.",
   icons: {
-    icon: '/favicon.ico',
+    icon: "/favicon.ico",
   },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-  },
-  themeColor: '#000000',
-  colorScheme: 'dark',
-  robots: 'index, follow',
-  authors: [{ name: 'AI Cybersecurity', url: 'https://www.example.com' }],
-  creator: 'AI Cybersecurity',
-  publisher: 'AI Cybersecurity',
+  robots: "index, follow",
+  authors: [{ name: "AI Cybersecurity", url: "https://www.example.com" }],
+  creator: "AI Cybersecurity",
+  publisher: "AI Cybersecurity",
   openGraph: {
-    title: "Hamza Khan | Building Digital Success Stories | Full Stack & AI Expert",
-    description:  "Your vision, my code - Creating powerful digital experiences that drive growth. Join 20+ satisfied clients who've transformed their online presence.",
+    title:
+      "Hamza Khan | Building Digital Success Stories | Full Stack & AI Expert",
+    description:
+      "Your vision, my code - Creating powerful digital experiences that drive growth. Join 20+ satisfied clients who've transformed their online presence.",
     url: "https://cyber-ai-two.vercel.app/",
     siteName: "Hamza Khan's Portfolio",
     images: [
@@ -36,10 +32,20 @@ export const metadata: Metadata = {
   },
 };
 
+// Correct placement of viewport, themeColor, and colorScheme
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
+export const themeColor = "#000000";
+export const colorScheme = "dark";
+
 export default function Home() {
   return (
     <main>
       <HomePage />
-    </main>  
+    </main>
   );
 }
