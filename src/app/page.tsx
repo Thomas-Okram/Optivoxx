@@ -2,11 +2,11 @@ import HomePage from "./componets/HomePage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Cybersecurity | Your Vision, My Code",
+  title: "Optivoxx Technologies",
   description:
     "Your vision, my code - Creating powerful digital experiences that drive growth. Join 20+ satisfied clients who've transformed their online presence.",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/images/001.png", // This points to /public/images/001.png
   },
   robots: "index, follow",
   authors: [
